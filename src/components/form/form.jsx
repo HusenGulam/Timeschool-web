@@ -1,11 +1,11 @@
 
 import { useState, useContext } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import robot from "../img/yellow.png";
+import robot from "../img/timetoy.png";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faListNumeric, faPhone, faLocation } from "@fortawesome/free-solid-svg-icons";
-import logo from '../img/logo.png'
+
 
 export default function RobotForm() {
   const [formData, setFormData] = useState({
@@ -102,13 +102,17 @@ export default function RobotForm() {
         transition={{ duration: 1 }}
         className="absolute bottom-6 left-6 z-10"
       >
-        <motion.div
-          animate={{ y: [0, -20, 0] }}
-          transition={{ duration: 2, repeat: Infinity }}
-          className="w-[250px]"
-        >
-          <img src={robot} alt="Robot" className="robotic drop-shadow-lg w-[120%]" />
-        </motion.div>
+       <motion.div
+  animate={{ y: [0, -20, 0] }}
+  transition={{ duration: 2, repeat: Infinity }}
+  className="w-[250px] h-[400px] relative"
+>
+  <img
+    src={robot}
+    alt="Robot"
+    className="robotic drop-shadow-lg w-[70%] absolute top-0 left-1/2 -translate-x-1/2"
+  />
+</motion.div>
 
         <AnimatePresence>
           {showMsg && (
@@ -118,7 +122,7 @@ export default function RobotForm() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
               transition={{ type: "spring", stiffness: 180, damping: 10, duration: 0.5 }}
-              className="absolute -top-[250px] left-40 thought-bubble px-6 py-3 text-black font-semibold text-sm"
+              className="absolute -top-[100px] left-40 thought-bubble px-10 py-3 text-black font-semibold text-sm w-[100%] bg-yellow-400 rounded-full "
             >
               {robotMsg}
               <div className="thought-tail">

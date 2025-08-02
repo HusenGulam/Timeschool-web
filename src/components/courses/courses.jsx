@@ -145,9 +145,9 @@ function Courses(){
 
         {/* third ssection */}
         <div className="relative w-full overflow-hidden bg-black py-10">
-  <h2 className="text-4xl font-bold text-yellow-400 mb-10 text-center">
+  <h1 className="text-4xl font-bold text-yellow-400 mb-10 text-center text-[50px]">
     Bizning barcha kurslarimiz
-  </h2>
+  </h1>
 
   {/* Slider */}
   <div
@@ -197,7 +197,7 @@ function Courses(){
     {/* fourth section */}
 
     <div className="pt-[70px] w-[90%] mx-auto pb-[100px]" >
-  <h1 className="text-[#FFC107] font-semibold text-[50px] sm:text-[35px] md:text-[40px] pb-[100px] sm:pb-[120px] md:pb-[150px] text-center md:text-left">
+  <h1 className="text-[#FFC107] font-bold text-[50px] sm:text-[35px] md:text-[40px] pb-[100px] sm:pb-[120px] md:pb-[150px] text-center md:text-left">
     Nima uchun bizni tanlashadi?
   </h1>
 

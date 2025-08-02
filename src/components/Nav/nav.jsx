@@ -84,7 +84,7 @@ function Nav() {
             {[
               { to: '/', text: 'Bosh sahifa' },
               { to: '/courses', text: 'Kurslar' },
-              { to: '/natijalar', text: 'Natijalar' },
+              { to: '/results', text: 'Natijalar' },
               { to: '/form', text: "Ro'yhatdan o'tish" },
             ].map(({ to, text }) => (
               <li
